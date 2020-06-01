@@ -7,6 +7,10 @@ class Processor {
 
   // TODO: Declare any necessary private members
  private:
+  unsigned long long int previdle,previowait;
+  unsigned long long int prevuser , prevnice;
+  unsigned long long int  prevsystem , previrq , prevsoftirq , prevsteal;
+
 };
 
 #endif
