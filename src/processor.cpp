@@ -32,10 +32,10 @@ float Processor::Utilization()
   unsigned long long int PrevTotal=PrevIdle+PrevNonIdle;
   unsigned long long int  Total = Idle + NonIdle;
   
-  unsigned long long int totald = Total - PrevTotal;
-  unsigned long long int idled = Idle - PrevIdle;
+  float totald = Total - PrevTotal;
+  float  idled = Idle - PrevIdle;
   
-  float CPU_Percentage = (totald - idled)/(float)totald ;
+  float CPU_Percentage = (totald - idled)/totald ;
 
   prevuser=user;
   prevnice=nice;
